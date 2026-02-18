@@ -1,6 +1,6 @@
 {
 	"AWSTemplateFormatVersion": "2010-09-09",
-	"Description": "(v12.1) AWS CFT to deploy a dual AZ A-P solution integrated with VPC Route Server, repo: https://github.com/FortinetCloudCSE/fortigate-aws-tgwconnect-ha-dualaz-cloudformation",
+	"Description": "(v16.1) AWS CFT to deploy a dual AZ A-P solution integrated with VPC Route Server, repo: https://github.com/FortinetCloudCSE/fortigate-aws-tgwconnect-ha-dualaz-cloudformation",
 	"Metadata": {
 		"AWS::CloudFormation::Interface": {
 			"ParameterGroups": [
@@ -1543,6 +1543,15 @@
 						"ToPort": "65535",
 						"CidrIp": {
 							"Ref": "CIDRForInstanceAccess"
+						}
+					},
+					{
+						"Description": "Allow TgwConnectCIDRBlock access to FGT",
+						"IpProtocol": "-1",
+						"FromPort": "0",
+						"ToPort": "65535",
+						"CidrIp": {
+							"Ref": "TgwConnectCIDRBlock"
 						}
 					},
 					{
