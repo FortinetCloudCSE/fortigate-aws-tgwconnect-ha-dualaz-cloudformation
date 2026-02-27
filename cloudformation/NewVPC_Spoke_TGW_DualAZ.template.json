@@ -1,6 +1,6 @@
 {
 	"AWSTemplateFormatVersion": "2010-09-09",
-	"Description": "(v5.0) AWS CFT to deploy a dual AZ spoke VPC for a dual AZ A-A solution, repo: https://github.com/FortinetCloudCSE/fortigate-aws-tgwconnect-ha-dualaz-cloudformation",
+	"Description": "(v26.1.a) AWS CFT to deploy a dual AZ spoke VPC for a dual AZ A-A solution, repo: https://github.com/FortinetCloudCSE/fortigate-aws-tgwconnect-ha-dualaz-cloudformation",
 	"Metadata": {
 		"AWS::CloudFormation::Interface": {
 			"ParameterGroups": [
